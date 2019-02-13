@@ -1,1 +1,24 @@
-*{margin:0;padding:0;background:#ccc}
+div {background-color:var(--bg);color:var(--text);--check:#status_of_the_sun}
+p{white-space: pre-wrap;}
+
+#the_sun + * {/*dark */
+	--bg:#222;--text:teal
+}
+#the_sun:checked + * {/*light*/
+	--bg:#ded;--text:#033
+}
+
+#the_sun + div > label[for="the_sun"] * { /*dark label*/
+	background:#333;color:#0ff;box-shadow: 0 0 10em 2em #333;
+}
+#the_sun:checked+div>label[for="the_sun"]*{/*light label*/
+	background:#333;color:#0ff
+}
+/*all the reas stuff goes there*/
+:root,html,body,#all_the_stuffs_shall_go_here{width:100%;height:100%;font-family: monospace;font-size:1.25em;}
+*{padding:0;margin:0;transition: 0.1s ease-out;}
+#the_sun {float:left;display:none;}
+label[for="the_sun"] * {background:black}
+label[for="the_sun"] > hr {margin-top:-1.2em;height:2.3em;border:0px transparent}
+#the_sun + div > label > #darkmodetext:after{content:"light mode"}
+#the_sun:checked + div > label > #darkmodetext::after{content:"dark  mode"}
