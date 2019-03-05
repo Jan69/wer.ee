@@ -1,8 +1,6 @@
 <html><head></head><body>
-<p id="markdown_header_comment">
-
-	<input type="checkbox" id="the_sun"/>
-	<div id="all_the_stuffs_shall_go_here">
+<input type="checkbox" id="the_sun"/>
+<div id="all_the_stuffs_shall_go_here">
 <!--
 
 [//]: # (possibly a comment)
